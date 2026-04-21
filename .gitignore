@@ -1,0 +1,17 @@
+# Internal / private — never publish
+CONTEXT.md
+.claude/
+
+# OS / editor junk
+.DS_Store
+Thumbs.db
+desktop.ini
+*.swp
+*.swo
+.vscode/
+.idea/
+
+# Backup / temp
+*.bak
+*.tmp
+*~

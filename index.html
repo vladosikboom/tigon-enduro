@@ -585,84 +585,6 @@
     color: var(--ink-soft);
   }
 
-  /* ——————————————————————————————— MARKET RATE (AI CHAT) ——— */
-  .chat {
-    margin-top: 24px;
-    max-width: 820px;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-  }
-  .chat-msg {
-    padding: 24px 28px;
-    border-radius: 8px;
-    border: 1px solid var(--line);
-  }
-  .chat-msg.user {
-    background: var(--bg);
-    max-width: 78%;
-    align-self: flex-end;
-  }
-  .chat-msg.ai {
-    background: var(--bg-tint);
-    align-self: flex-start;
-    max-width: 94%;
-    border-left: 3px solid var(--green);
-  }
-  .chat-head {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 12px;
-    font-family: var(--mono);
-    font-size: 11px;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-  }
-  .chat-head .who { color: var(--ink); font-weight: 600; }
-  .chat-msg.ai .chat-head .who { color: var(--green-deep); }
-  .chat-head .when { color: var(--ink-mute); }
-  .chat-msg p {
-    font-size: 15.5px;
-    color: var(--ink);
-    line-height: 1.55;
-    max-width: none;
-  }
-  .chat-msg p + p,
-  .chat-msg ul + p { margin-top: 12px; }
-  .chat-msg ul {
-    margin-top: 14px;
-    list-style: none;
-    padding: 0;
-  }
-  .chat-msg li {
-    padding: 6px 0 6px 20px;
-    position: relative;
-    font-size: 15px;
-    color: var(--ink-soft);
-    line-height: 1.55;
-  }
-  .chat-msg li::before {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 15px;
-    width: 10px;
-    height: 1px;
-    background: var(--ink-mute);
-  }
-  .chat-msg strong { color: var(--ink); font-weight: 600; }
-  .chat-note {
-    margin-top: 28px;
-    font-family: var(--mono);
-    font-size: 11px;
-    letter-spacing: 0.12em;
-    text-transform: uppercase;
-    color: var(--ink-mute);
-    text-align: center;
-    max-width: none;
-  }
-
   /* ——————————————————————————————— TIMELINE ——— */
   .tl { margin-top: 32px; position: relative; }
   .tl-track {
@@ -895,15 +817,9 @@
 <!-- ————————————————————————————————————— HERO ——— -->
 <section class="hero">
   <div class="hero-bg">
-    <!--
-      Drop a looping MP4 at media/hero.mp4 (ideally a WebM too).
-      Poster = photo_5 acts as fallback if video missing or blocked.
-      Target: 1080p, 30fps, ~8-12s loop, no audio, ≤10MB.
-    -->
     <video class="hero-video" autoplay muted loop playsinline preload="metadata"
            poster="media/photo_5_2026-04-21_19-12-18.jpg">
       <source src="media/hero.mp4" type="video/mp4">
-      <source src="media/hero.webm" type="video/webm">
     </video>
     <div class="hero-tint"></div>
   </div>
@@ -1098,44 +1014,10 @@
   </div>
 </section>
 
-<!-- ————————————————————————————————————— 05 MARKET RATE (AI DIALOG) ——— -->
-<section id="market">
-  <div class="wrap">
-    <div class="section-label">05 — Market Rate</div>
-    <h2>Don't take <em>our word</em> for it.</h2>
-
-    <div class="chat">
-      <div class="chat-msg user">
-        <div class="chat-head">
-          <span class="who">Prompt</span>
-          <span class="when">Apr 2026</span>
-        </div>
-        <p>What is the standard referral commission that hostels receive from adventure tour operators in Vietnam's backpacker corridor (Dalat, Nha Trang, Hoi An, Sapa)?</p>
-      </div>
-
-      <div class="chat-msg ai">
-        <div class="chat-head">
-          <span class="who">Claude · Opus 4.6</span>
-          <span class="when">Response</span>
-        </div>
-        <p>In Vietnam's backpacker hubs, the standard referral commission paid to hostels is <strong>10–15% of gross booking value</strong>, with a narrow band above that for exclusive deals.</p>
-        <ul>
-          <li><strong>10%</strong> — shared, non-exclusive referrals; low placement</li>
-          <li><strong>15%</strong> — fair-market rate for clear attribution and a prominent placement</li>
-          <li><strong>18–20%</strong> — only with exclusivity or premium stand positioning</li>
-        </ul>
-        <p>A <strong>15% non-exclusive</strong> arrangement sits at the top of the standard non-exclusive range — favourable to the hostel while keeping the operator sustainable.</p>
-      </div>
-    </div>
-
-    <p class="chat-note">Independent LLM query · not Enduro, not Tigon</p>
-  </div>
-</section>
-
-<!-- ————————————————————————————————————— 06 NUMBERS ——— -->
+<!-- ————————————————————————————————————— 05 NUMBERS ——— -->
 <section id="numbers">
   <div class="wrap">
-    <div class="section-label">06 — The Numbers</div>
+    <div class="section-label">05 — The Numbers</div>
     <h2>What <em>15%</em> looks like.</h2>
 
     <div class="chart-wrap">
@@ -1192,10 +1074,10 @@
   </div>
 </section>
 
-<!-- ————————————————————————————————————— 07 TIMELINE ——— -->
+<!-- ————————————————————————————————————— 06 TIMELINE ——— -->
 <section id="next">
   <div class="wrap">
-    <div class="section-label">07 — Next Step</div>
+    <div class="section-label">06 — Next Step</div>
     <h2>Start <em>this week</em>. Review in 14 days.</h2>
 
     <div class="tl">
